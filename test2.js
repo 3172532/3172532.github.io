@@ -1771,7 +1771,7 @@ var series = [];
             },
             data: item[1].map(function (dataItem) {
                 return {
-                    name: dataItem[1].name,
+                   // name: dataItem[1].name,
                     value: geoCoordMap[dataItem[1].name].concat([dataItem[1].value])
                 };
             })
@@ -1781,8 +1781,7 @@ var series = [];
 option = {
     backgroundColor: '#404a59',
     title : {
-        text: '模拟迁徙',
-        subtext: '数据纯属虚构',
+        text: '杰青教育迁徙',
         left: 'center',
         textStyle : {
             color: '#fff'

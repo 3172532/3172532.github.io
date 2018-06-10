@@ -660,7 +660,7 @@ var convertData = function (data) {
 };
 
 option = {
-    backgroundColor: '#404a59',
+    backgroundColor: "#808080",
     title: {
         text: '杰出青年高校分布图',
         left: 'center',
@@ -679,9 +679,9 @@ option = {
         orient: 'vertical',
         y: 'bottom',
         x:'right',
-        data:['总数'],
+        data:['拥有杰青人数'],
         textStyle: {
-            color: '#fff'
+            color: '#3259B8'
         }
     },
     geo: {
@@ -704,7 +704,7 @@ option = {
     },
     series : [
         {
-            name: '总数',
+            name: '拥有杰青人数',
             type: 'scatter',
             coordinateSystem: 'geo',
             data: convertData(data),
@@ -728,7 +728,7 @@ option = {
             }
         },
         {
-            name: '总数',
+            name: '拥有杰青人数',
             type: 'effectScatter',
             coordinateSystem: 'geo',
             data: convertData(data.sort(function (a, b) {
